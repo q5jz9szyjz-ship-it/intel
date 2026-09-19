@@ -1,0 +1,27 @@
+const arabicSections = document.querySelectorAll('[lang="ar"]');
+
+arabicSections.forEach(function(section) {
+
+  const language = section.getAttribute("lang");
+
+  if (language === "ar") {
+    section.setAttribute("dir", "rtl");
+  } else {
+    section.setAttribute("dir", "ltr");
+  }
+
+});
+
+
+const newsletterForm = document.getElementById("newsletterForm");
+const formMessage = document.getElementById("formMessage");
+
+newsletterForm.addEventListener("submit", function(event) {
+
+  event.preventDefault();
+
+  formMessage.textContent = "Thank you for subscribing!";
+
+  newsletterForm.reset();
+
+});
