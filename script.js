@@ -29,3 +29,7 @@ newsletterForm.addEventListener("submit", function(event) {
 const page = document.documentElement;
 
 console.log(page);
+
+const language = page.getAttribute("lang");
+
+console.log(language);
