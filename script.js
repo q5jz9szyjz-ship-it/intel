@@ -44,6 +44,8 @@ const languageBtn = document.getElementById("languageBtn");
 
 const mainTitle = document.getElementById("mainTitle");
 
+const mainDescription = document.getElementById("mainDescription");
+
 console.log(languageBtn);
 
 languageBtn.addEventListener("click", function() {
@@ -55,11 +57,13 @@ languageBtn.addEventListener("click", function() {
         page.setAttribute("dir", "rtl");
         languageBtn.textContent = "English";
         mainTitle.textContent = "الاستدامة عبر العصور";
+        mainDescription.textContent = "استكشف رحلة إنتل عبر الزمن، واكتشف كيف ساهم التزامنا بالابتكار في تشكيل مستقبل أكثر استدامة للتكنولوجيا وكوكبنا.";
     } else {
         page.setAttribute("lang", "en");
         page.setAttribute("dir", "ltr");
         languageBtn.textContent = "العربية";
         mainTitle.textContent = "Sustainability Through the Ages";
+        mainDescription.textContent = "Explore Intel's journey through time, discovering how our commitment to innovation has shaped a more sustainable future for technology and our planet.";
     }
 
 });
