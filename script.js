@@ -39,3 +39,15 @@ if (language === "ar") {
 } else {
     page.setAttribute("dir", "ltr");
 }
+
+const languageBtn = document.getElementById("languageBtn");
+
+console.log(languageBtn);
+
+languageBtn.addEventListener("click", function() {
+    console.log("Language button clicked");
+});
+
+languageBtn.addEventListener("click", function() {
+    console.log("Language button clicked");
+});
