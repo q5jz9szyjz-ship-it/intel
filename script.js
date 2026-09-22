@@ -45,9 +45,18 @@ const languageBtn = document.getElementById("languageBtn");
 console.log(languageBtn);
 
 languageBtn.addEventListener("click", function() {
-    console.log("Language button clicked");
+
+    const currentLanguage = page.getAttribute("lang");
+
+    if (currentLanguage === "en") {
+        page.setAttribute("lang", "ar");
+        page.setAttribute("dir", "rtl");
+        languageBtn.textContent = "English";
+    } else {
+        page.setAttribute("lang", "en");
+        page.setAttribute("dir", "ltr");
+        languageBtn.textContent = "العربية";
+    }
+
 });
 
-languageBtn.addEventListener("click", function() {
-    console.log("Language button clicked");
-});
