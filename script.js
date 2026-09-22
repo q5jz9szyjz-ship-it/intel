@@ -25,3 +25,7 @@ newsletterForm.addEventListener("submit", function(event) {
   newsletterForm.reset();
 
 });
+
+const page = document.documentElement;
+
+console.log(page);
