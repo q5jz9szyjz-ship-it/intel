@@ -42,6 +42,8 @@ if (language === "ar") {
 
 const languageBtn = document.getElementById("languageBtn");
 
+const mainTitle = document.getElementById("mainTitle");
+
 console.log(languageBtn);
 
 languageBtn.addEventListener("click", function() {
@@ -52,10 +54,12 @@ languageBtn.addEventListener("click", function() {
         page.setAttribute("lang", "ar");
         page.setAttribute("dir", "rtl");
         languageBtn.textContent = "English";
+        mainTitle.textContent = "الاستدامة عبر العصور";
     } else {
         page.setAttribute("lang", "en");
         page.setAttribute("dir", "ltr");
         languageBtn.textContent = "العربية";
+        mainTitle.textContent = "Sustainability Through the Ages";
     }
 
 });
