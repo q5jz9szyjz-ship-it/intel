@@ -33,3 +33,9 @@ console.log(page);
 const language = page.getAttribute("lang");
 
 console.log(language);
+
+if (language === "ar") {
+    page.setAttribute("dir", "rtl");
+} else {
+    page.setAttribute("dir", "ltr");
+}
